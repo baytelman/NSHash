@@ -57,4 +57,12 @@
 	return hash;
 }
 
+- (NSString*)hexOnly
+{
+    NSString * string = [self stringByReplacingOccurrencesOfString:@" " withString:@""];
+    string = [string stringByReplacingOccurrencesOfString:@"<" withString:@""];
+    string = [string stringByReplacingOccurrencesOfString:@">" withString:@""];
+    return string;
+}
+
 @end

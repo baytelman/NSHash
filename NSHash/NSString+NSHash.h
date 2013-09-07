@@ -24,4 +24,6 @@
 
 - (NSString*) SHA256;
 
+- (NSString*) hexOnly;
+
 @end
